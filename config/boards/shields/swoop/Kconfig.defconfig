@@ -4,7 +4,7 @@
 if SHIELD_SWOOP_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "Y52"
+    default "Y64"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
