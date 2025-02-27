@@ -118,6 +118,10 @@ swoop: swoop {
 
 };
 
+zephyr_udc0: &usbd {
+    status = "okay";
+};
+
 &pro_micro_i2c {
 	status = "okay";
 
