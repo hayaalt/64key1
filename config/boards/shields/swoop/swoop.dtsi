@@ -6,9 +6,15 @@
 
 #include <dt-bindings/zmk/matrix_transform.h>
 #include "swoop-layouts.dtsi"
+
+ &swoop_layout{
+	transform = <&default_transform>;
+
+};
+
 / {
 	chosen {
-	        zmk,kscan = &kscan0;
+	    zmk,kscan = &kscan0;
              zmk,physical-layout = &swoop_layout;
 	};
 
@@ -29,7 +35,7 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5)  RC(3,6)  RC(3,7) RC(3,8) RC(3,9
 
 	kscan0: kscan {        
 		compatible = "zmk,kscan-gpio-matrix";
-		label = "KSCAN";
+	
 
 		diode-direction = "col2row";
 		       row-gpios= <&pro_micro 19 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
@@ -45,22 +51,15 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5)  RC(3,6)  RC(3,7) RC(3,8) RC(3,9
 
 };
 
-
- &swoop_layout{
-	transform = <&default_transform>;
-	kscan = <&kscan0>;
+&uart0 {
+	status = "disabled";
 };
 
 zephyr_udc0: &usbd {
     status = "okay";
 };
 
-&usbd {
-    status = "okay";
-    cdc_acm_uart: cdc_acm_uart {
-        compatible = "zephyr,cdc-acm-uart";
-    };
-};
+
 
 &pro_micro_i2c {
 	status = "okay";
