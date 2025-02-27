@@ -5,7 +5,7 @@
 / {
     swoop_layout: swoop_layout {
 		compatible = "zmk,physical-layout";
-		display-name = "swoop";
+		display-name = "Layout";
 		transform = <&default_transform>;
 
         keys  //                     w   h    x    y     rot   rx   ry
