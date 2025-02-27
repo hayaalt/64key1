@@ -56,7 +56,7 @@
     };
 
     macros {
-        macro_phone: macro_phone {
+        macro_phone1: macro_phone1 {
             // 1351
 
             label = "MACRO_PHONE";
