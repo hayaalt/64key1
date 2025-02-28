@@ -91,11 +91,12 @@
             label = "R_CLK";
         };
 
-        SCRL1_UP: SCRL1_UP {
+        SCRL_UPP: SCRL_UPP {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&msc SCRL_UP>;
-            label = "SCRL1_UP";
+            label = "SCRL_UPP";
+            wait-ms = <3>;
         };
 
         SCRL1_DOWN: SCRL1_DOWN {
@@ -142,7 +143,7 @@
             bindings = <
 &mmv MOVE_UP    &kp N1  &kp N2     &kp N3     &kp N4     &kp N5     &kp N6    &kp N7     &kp N8     &kp N9    &kp N0    &lt 1 MINUS
 &msc SCRL_DOWN  &kp Q   &kp W      &kp E      &kp R      &kp T      &kp Y     &kp U      &kp I      &kp O     &kp P     &lt 2 EQUAL
-&kp LSHFT       &kp A   &kp S      &kp D      &kp F      &kp G      &kp H     &kp J      &kp K      &kp L     &kp SEMI  &kp SQT
+&SCRL1_DOWN     &kp A   &kp S      &kp D      &kp F      &kp G      &kp H     &kp J      &kp K      &kp L     &kp SEMI  &kp SQT
 &kp CAPS        &kp Z   &kp X      &kp C      &kp V      &kp B      &kp N     &kp M      &kp COMMA  &kp DOT   &kp FSLH  &kp LSHFT
                         &kp LGUI   &kp GRAVE  &kp BSPC   &kp SPACE  &kp UP    &kp ENTER  &kp LBKT   &kp RBKT
                         &kp GRAVE  &kp LALT   &kp LCTRL  &lt 3 DEL  &kp LEFT  &kp RIGHT  &kp DOWN   &kp NUBS
