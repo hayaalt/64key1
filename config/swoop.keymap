@@ -101,21 +101,21 @@
         MOVE_DOWN1: MOVE_DOWN1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&msc MOVE_DOWN>;
+            bindings = <&msc SCRL_DOWN>;
             label = "MOVE_DOWN1";
         };
 
         MOVE_LEFT1: MOVE_LEFT1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&msc MOVE_LEFT>;
+            bindings = <&msc SCRL_LEFT>;
             label = "MOVE_LEFT1";
         };
 
         MOVE_RIGHT1: MOVE_RIGHT1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&msc MOVE_RIGHT>;
+            bindings = <&msc SCRL_RIGHT>;
             label = "MOVE_RIGHT1";
         };
     };
