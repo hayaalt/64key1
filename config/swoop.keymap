@@ -56,25 +56,25 @@
     };
 
     macros {
-        LCLK: LCLK {
+        L_CLK: L_CLK {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&mkp LCLK>;
-            label = "LCLK";
+            label = "L_CLK";
         };
 
-        MCLK: MCLK {
+        M_CLK: M_CLK {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&none>;
-            label = "MCLK";
+            label = "M_CLK";
         };
 
-        RCLK: RCLK {
+        R_CLK: R_CLK {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&none>;
-            label = "RCLK";
+            label = "R_CLK";
         };
     };
 
