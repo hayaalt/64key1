@@ -76,53 +76,48 @@
             bindings = <&mkp RCLK>;
             label = "R_CLK";
         };
-       SCRL_UP: SCRL_UP {
+
+        SCRL_UP1: SCRL_UP1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&msc SCRL_UP>;
-            label = "SCRL_UP";
+            label = "SCRL_UP1";
         };
 
-        SCRL_DOWN: SCRL_DOWN {
+        SCRL_DOWN1: SCRL_DOWN1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&msc SCRL_DOWN>;
-            label = "SCRL_DOWN";
+            label = "SCRL_DOWN1";
         };
 
-       MOVE_UP: MOVE_UP {
+        MOVE_UP1: MOVE_UP1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&mmv MOVE_UP>;
-            label = "MOVE_UP";
+            label = "MOVE_UP1";
         };
 
-        MOVE_DOWN: MOVE_DOWN {
+        MOVE_DOWN1: MOVE_DOWN1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&msc MOVE_DOWN>;
-            label = "MOVE_DOWN";
+            label = "MOVE_DOWN1";
         };
-   MOVE_LEFT: MOVE_LEFT {
+
+        MOVE_LEFT1: MOVE_LEFT1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&msc MOVE_LEFT>;
-            label = "MOVE_LEFT";
+            label = "MOVE_LEFT1";
         };
 
-        MOVE_RIGHT: MOVE_RIGHT {
+        MOVE_RIGHT1: MOVE_RIGHT1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&msc MOVE_RIGHT>;
-            label = "MOVE_RIGHT";
+            label = "MOVE_RIGHT1";
         };
-
-
-
-
-
-
-
     };
 
     keymap {
