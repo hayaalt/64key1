@@ -90,49 +90,6 @@
             bindings = <&mkp RCLK>;
             label = "R_CLK";
         };
-
-        SCRL_UPP: SCRL_UPP {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&msc SCRL_UP>;
-            label = "SCRL_UPP";
-            wait-ms = <3>;
-        };
-
-        SCRL1_DOWN: SCRL1_DOWN {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&msc SCRL_DOWN>;
-            label = "SCRL1_DOWN";
-        };
-
-        MOVE1_UP: MOVE1_UP {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&mmv MOVE_UP>;
-            label = "MOVE1_UP";
-        };
-
-        MOVE1_DOWN: MOVE1_DOWN {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&mmv MOVE_DOWN>;
-            label = "MOVE1_DOWN";
-        };
-
-        MOVE1_LEFT: MOVE1_LEFT {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&mmv MOVE_LEFT>;
-            label = "MOVE1_LEFT";
-        };
-
-        MOVE1_RIGHT: MOVE1_RIGHT {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&mmv MOVE_RIGHT>;
-            label = "MOVE1_RIGHT";
-        };
     };
 
     keymap {
