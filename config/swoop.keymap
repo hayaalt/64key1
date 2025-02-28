@@ -22,12 +22,14 @@
     flavor = "balanced";
     quick-tap-ms = <170>;
 };
+
 &mmv {
     x-input-code = <INPUT_REL_X>;
     y-input-code = <INPUT_REL_Y>;
     time-to-max-speed-ms = <300>;
     acceleration-exponent = <1>;
 };
+
 &msc {
     x-input-code = <INPUT_REL_HWHEEL>;
     y-input-code = <INPUT_REL_WHEEL>;
@@ -89,46 +91,46 @@
             label = "R_CLK";
         };
 
-        SCRL_UP1: SCRL_UP1 {
+        SCRL1_UP: SCRL1_UP {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&msc SCRL_UP>;
-            label = "SCRL_UP1";
+            label = "SCRL1_UP";
         };
 
-        SCRL_DOWN1: SCRL_DOWN1 {
+        SCRL1_DOWN: SCRL1_DOWN {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&msc SCRL_DOWN>;
-            label = "SCRL_DOWN1";
+            label = "SCRL1_DOWN";
         };
 
-        MOVE_UP1: MOVE_UP1 {
+        MOVE1_UP: MOVE1_UP {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&mmv MOVE_UP>;
-            label = "MOVE_UP1";
+            label = "MOVE1_UP";
         };
 
-        MOVE_DOWN1: MOVE_DOWN1 {
+        MOVE1_DOWN: MOVE1_DOWN {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&mmv SCRL_DOWN>;
-            label = "MOVE_DOWN1";
+            bindings = <&mmv MOVE_DOWN>;
+            label = "MOVE1_DOWN";
         };
 
-        MOVE_LEFT1: MOVE_LEFT1 {
+        MOVE1_LEFT: MOVE1_LEFT {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&mmv SCRL_LEFT>;
-            label = "MOVE_LEFT1";
+            bindings = <&mmv MOVE_LEFT>;
+            label = "MOVE1_LEFT";
         };
 
-        MOVE_RIGHT1: MOVE_RIGHT1 {
+        MOVE1_RIGHT: MOVE1_RIGHT {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&mmv SCRL_RIGHT>;
-            label = "MOVE_RIGHT1";
+            bindings = <&mmv MOVE_RIGHT>;
+            label = "MOVE1_RIGHT";
         };
     };
 
@@ -138,12 +140,12 @@
         default_layer {
             label = "DEFAULT";
             bindings = <
-&mmv MOVE_UP  &kp N1  &kp N2     &kp N3     &kp N4     &kp N5     &kp N6    &kp N7     &kp N8     &kp N9    &kp N0    &lt 1 MINUS
-&msc SCRL_DOWN &kp Q   &kp W      &kp E      &kp R      &kp T      &kp Y     &kp U      &kp I      &kp O     &kp P     &lt 2 EQUAL
-&kp LSHFT  &kp A   &kp S      &kp D      &kp F      &kp G      &kp H     &kp J      &kp K      &kp L     &kp SEMI  &kp SQT
-&kp CAPS   &kp Z   &kp X      &kp C      &kp V      &kp B      &kp N     &kp M      &kp COMMA  &kp DOT   &kp FSLH  &kp LSHFT
-                   &kp LGUI   &kp GRAVE  &kp BSPC   &kp SPACE  &kp UP    &kp ENTER  &kp LBKT   &kp RBKT
-                   &kp GRAVE  &kp LALT   &kp LCTRL  &lt 3 DEL  &kp LEFT  &kp RIGHT  &kp DOWN   &kp NUBS
+&mmv MOVE_UP    &kp N1  &kp N2     &kp N3     &kp N4     &kp N5     &kp N6    &kp N7     &kp N8     &kp N9    &kp N0    &lt 1 MINUS
+&msc SCRL_DOWN  &kp Q   &kp W      &kp E      &kp R      &kp T      &kp Y     &kp U      &kp I      &kp O     &kp P     &lt 2 EQUAL
+&kp LSHFT       &kp A   &kp S      &kp D      &kp F      &kp G      &kp H     &kp J      &kp K      &kp L     &kp SEMI  &kp SQT
+&kp CAPS        &kp Z   &kp X      &kp C      &kp V      &kp B      &kp N     &kp M      &kp COMMA  &kp DOT   &kp FSLH  &kp LSHFT
+                        &kp LGUI   &kp GRAVE  &kp BSPC   &kp SPACE  &kp UP    &kp ENTER  &kp LBKT   &kp RBKT
+                        &kp GRAVE  &kp LALT   &kp LCTRL  &lt 3 DEL  &kp LEFT  &kp RIGHT  &kp DOWN   &kp NUBS
             >;
         };
 
