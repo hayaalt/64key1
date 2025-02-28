@@ -76,7 +76,7 @@
             bindings = <&mkp RCLK>;
             label = "R_CLK";
         };
-   SCRL_UP: SCRL_UP {
+       SCRL_UP: SCRL_UP {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&msc SCRL_UP>;
@@ -90,7 +90,7 @@
             label = "SCRL_DOWN";
         };
 
-   MOVE_UP: MOVE_UP {
+       MOVE_UP: MOVE_UP {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&mmv MOVE_UP>;
